@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassVSObject", "ClassVSObj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{60E6BF82-D8F0-450B-A53C-8DB1941123FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructor", "Constructor\Constructor.csproj", "{29F823A9-E77D-4A32-8CB9-9CB631521751}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{0A3650D9-36D1-40D6-A5BF-C931A204FBE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{60E6BF82-D8F0-450B-A53C-8DB1941123FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60E6BF82-D8F0-450B-A53C-8DB1941123FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60E6BF82-D8F0-450B-A53C-8DB1941123FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F823A9-E77D-4A32-8CB9-9CB631521751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F823A9-E77D-4A32-8CB9-9CB631521751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F823A9-E77D-4A32-8CB9-9CB631521751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F823A9-E77D-4A32-8CB9-9CB631521751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A3650D9-36D1-40D6-A5BF-C931A204FBE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A3650D9-36D1-40D6-A5BF-C931A204FBE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A3650D9-36D1-40D6-A5BF-C931A204FBE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A3650D9-36D1-40D6-A5BF-C931A204FBE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

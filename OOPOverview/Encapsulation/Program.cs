@@ -14,6 +14,7 @@ namespace Encapsulation
             Console.WriteLine(student.GetAge());
 
             student.LastName = "Ürkmez";
+            
             var user = new { Name = "x", Age = 5 };
             Console.WriteLine(user.GetType().Name);  
            
