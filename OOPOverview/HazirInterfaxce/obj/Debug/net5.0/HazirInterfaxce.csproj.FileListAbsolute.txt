@@ -1,0 +1,16 @@
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\bin\Debug\net5.0\HazirInterfaxce.exe
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\bin\Debug\net5.0\HazirInterfaxce.deps.json
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\bin\Debug\net5.0\HazirInterfaxce.runtimeconfig.json
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\bin\Debug\net5.0\HazirInterfaxce.runtimeconfig.dev.json
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\bin\Debug\net5.0\HazirInterfaxce.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\bin\Debug\net5.0\ref\HazirInterfaxce.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\bin\Debug\net5.0\HazirInterfaxce.pdb
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\obj\Debug\net5.0\HazirInterfaxce.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\obj\Debug\net5.0\HazirInterfaxce.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\obj\Debug\net5.0\HazirInterfaxce.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\obj\Debug\net5.0\HazirInterfaxce.AssemblyInfo.cs
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\obj\Debug\net5.0\HazirInterfaxce.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\obj\Debug\net5.0\HazirInterfaxce.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\obj\Debug\net5.0\ref\HazirInterfaxce.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\obj\Debug\net5.0\HazirInterfaxce.pdb
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\OOPOverview\HazirInterfaxce\obj\Debug\net5.0\HazirInterfaxce.genruntimeconfig.cache
