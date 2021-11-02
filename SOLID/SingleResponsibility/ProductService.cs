@@ -13,6 +13,7 @@ namespace SingleResponsibility
         private string connectionString;
         public ProductService()
         {
+            //DRY:
             connectionString = @"Data Source=(localdb)\Mssqllocaldb;Initial Catalog=miniDatabase;Integrated Security=True";
         }
         public int AddProduct(string name, double price)

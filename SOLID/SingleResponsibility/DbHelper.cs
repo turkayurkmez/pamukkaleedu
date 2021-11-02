@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SingleResponsibility
 {
-   public class DbHelper
+   public class DbHelper : IDisposable
     {
         private SqlConnection sqlConnection = null;
         public DbHelper(string connectionString)
@@ -38,6 +38,11 @@ namespace SingleResponsibility
             {
                 sqlCommand.Parameters.AddWithValue(parameter.Key, parameter.Value);
             }
+        }
+
+        public void Dispose()
+        {
+            sqlConnection.Dispose();
         }
     }
 }

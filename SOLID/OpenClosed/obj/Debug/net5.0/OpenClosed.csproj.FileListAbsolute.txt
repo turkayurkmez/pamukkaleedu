@@ -1,0 +1,16 @@
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\bin\Debug\net5.0\OpenClosed.exe
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\bin\Debug\net5.0\OpenClosed.deps.json
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\bin\Debug\net5.0\OpenClosed.runtimeconfig.json
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\bin\Debug\net5.0\OpenClosed.runtimeconfig.dev.json
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\bin\Debug\net5.0\OpenClosed.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\bin\Debug\net5.0\ref\OpenClosed.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\bin\Debug\net5.0\OpenClosed.pdb
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\obj\Debug\net5.0\OpenClosed.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\obj\Debug\net5.0\OpenClosed.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\obj\Debug\net5.0\OpenClosed.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\obj\Debug\net5.0\OpenClosed.AssemblyInfo.cs
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\obj\Debug\net5.0\OpenClosed.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\obj\Debug\net5.0\OpenClosed.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\obj\Debug\net5.0\ref\OpenClosed.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\obj\Debug\net5.0\OpenClosed.pdb
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\SOLID\OpenClosed\obj\Debug\net5.0\OpenClosed.genruntimeconfig.cache
