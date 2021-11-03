@@ -1,5 +1,6 @@
 ﻿using pamukkaleEdu.Data.Repositories;
 using pamukkaleEdu.Entities;
+using pamukkaleEdu.Services.DataTransferObjects.Responses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +16,22 @@ namespace pamukkaleEdu.Services
         {
             this.ogrenciRepository = ogrenciRepository;
         }
-        public async Task<IEnumerable<Ogrenci>> OgrencileriGetir()
+        public async Task<IEnumerable<OgrenciListeResponse>> OgrencileriGetir()
         {
-            return await ogrenciRepository.GetAllEntitiesAync();
+            var ogrenciler = await ogrenciRepository.GetAllEntitiesAync();
+            List<OgrenciListeResponse> sonuc = new List<OgrenciListeResponse>();
+            ogrenciler.ToList().ForEach(ogr => sonuc.Add(
+                new OgrenciListeResponse
+                {
+                    Ad = ogr.Ad,
+                    Durum = ogr.Durum,
+                    Id = ogr.Id,
+                    OgrenciNo = ogr.OgrenciNo,
+                    Program = ogr.Program,
+                    Soyad = ogr.Soyad
+                }));
+
+            return sonuc;
         }
     }
 }

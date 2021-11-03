@@ -8,4 +8,8 @@
     <ProjectReference Include="..\pamukkaleEdu.Data\pamukkaleEdu.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DataTransferObjects\Requests\" />
+  </ItemGroup>
+
 </Project>
