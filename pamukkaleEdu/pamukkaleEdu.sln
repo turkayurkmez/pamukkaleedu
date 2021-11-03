@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{BA58537B-416A-4D47-8EEF-9230984D5E3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{D4500717-4BD6-45E2-BC9C-B5449D4D27B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{4452C860-1091-44FD-B451-3262E427CB94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pamukkaleEdu.API", "pamukkaleEdu.API\pamukkaleEdu.API.csproj", "{47AE912B-0F9A-420C-9B05-BBC544CE4BC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pamukkaleEdu.Entities", "pamukkaleEdu.Entities\pamukkaleEdu.Entities.csproj", "{E250B489-3CBE-461B-9038-A8F5809D008D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pamukkaleEdu.Services", "pamukkaleEdu.Services\pamukkaleEdu.Services.csproj", "{8FF96EA1-20B5-401F-8D59-FB84B9704AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pamukkaleEdu.Data", "pamukkaleEdu.Data\pamukkaleEdu.Data.csproj", "{79E34DF0-2F10-497D-8E9C-21FA554B4302}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47AE912B-0F9A-420C-9B05-BBC544CE4BC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47AE912B-0F9A-420C-9B05-BBC544CE4BC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47AE912B-0F9A-420C-9B05-BBC544CE4BC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47AE912B-0F9A-420C-9B05-BBC544CE4BC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E250B489-3CBE-461B-9038-A8F5809D008D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E250B489-3CBE-461B-9038-A8F5809D008D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E250B489-3CBE-461B-9038-A8F5809D008D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E250B489-3CBE-461B-9038-A8F5809D008D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FF96EA1-20B5-401F-8D59-FB84B9704AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FF96EA1-20B5-401F-8D59-FB84B9704AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FF96EA1-20B5-401F-8D59-FB84B9704AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FF96EA1-20B5-401F-8D59-FB84B9704AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79E34DF0-2F10-497D-8E9C-21FA554B4302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E34DF0-2F10-497D-8E9C-21FA554B4302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E34DF0-2F10-497D-8E9C-21FA554B4302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E34DF0-2F10-497D-8E9C-21FA554B4302}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47AE912B-0F9A-420C-9B05-BBC544CE4BC4} = {BA58537B-416A-4D47-8EEF-9230984D5E3F}
+		{E250B489-3CBE-461B-9038-A8F5809D008D} = {4452C860-1091-44FD-B451-3262E427CB94}
+		{8FF96EA1-20B5-401F-8D59-FB84B9704AD9} = {D4500717-4BD6-45E2-BC9C-B5449D4D27B7}
+		{79E34DF0-2F10-497D-8E9C-21FA554B4302} = {4452C860-1091-44FD-B451-3262E427CB94}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1DA2DC1F-C468-4B38-B516-13A4DDA6186E}
+	EndGlobalSection
+EndGlobal

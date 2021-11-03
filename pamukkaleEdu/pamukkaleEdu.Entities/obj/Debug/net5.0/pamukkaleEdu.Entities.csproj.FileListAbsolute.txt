@@ -1,0 +1,12 @@
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Entities\bin\Debug\net5.0\pamukkaleEdu.Entities.deps.json
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Entities\bin\Debug\net5.0\pamukkaleEdu.Entities.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Entities\bin\Debug\net5.0\ref\pamukkaleEdu.Entities.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Entities\bin\Debug\net5.0\pamukkaleEdu.Entities.pdb
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Entities\obj\Debug\net5.0\pamukkaleEdu.Entities.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Entities\obj\Debug\net5.0\pamukkaleEdu.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Entities\obj\Debug\net5.0\pamukkaleEdu.Entities.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Entities\obj\Debug\net5.0\pamukkaleEdu.Entities.AssemblyInfo.cs
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Entities\obj\Debug\net5.0\pamukkaleEdu.Entities.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Entities\obj\Debug\net5.0\pamukkaleEdu.Entities.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Entities\obj\Debug\net5.0\ref\pamukkaleEdu.Entities.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Entities\obj\Debug\net5.0\pamukkaleEdu.Entities.pdb

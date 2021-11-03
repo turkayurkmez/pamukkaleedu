@@ -1,0 +1,17 @@
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\bin\Debug\net5.0\pamukkaleEdu.Services.deps.json
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\bin\Debug\net5.0\pamukkaleEdu.Services.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\bin\Debug\net5.0\ref\pamukkaleEdu.Services.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\bin\Debug\net5.0\pamukkaleEdu.Services.pdb
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\bin\Debug\net5.0\pamukkaleEdu.Data.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\bin\Debug\net5.0\pamukkaleEdu.Entities.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\bin\Debug\net5.0\pamukkaleEdu.Data.pdb
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\bin\Debug\net5.0\pamukkaleEdu.Entities.pdb
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\obj\Debug\net5.0\pamukkaleEdu.Services.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\obj\Debug\net5.0\pamukkaleEdu.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\obj\Debug\net5.0\pamukkaleEdu.Services.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\obj\Debug\net5.0\pamukkaleEdu.Services.AssemblyInfo.cs
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\obj\Debug\net5.0\pamukkaleEdu.Services.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\obj\Debug\net5.0\pamukkaleEdu.Services.csproj.CopyComplete
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\obj\Debug\net5.0\pamukkaleEdu.Services.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\obj\Debug\net5.0\ref\pamukkaleEdu.Services.dll
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Services\obj\Debug\net5.0\pamukkaleEdu.Services.pdb

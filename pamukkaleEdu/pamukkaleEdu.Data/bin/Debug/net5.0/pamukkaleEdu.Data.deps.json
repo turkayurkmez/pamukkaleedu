@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "pamukkaleEdu.Data/1.0.0": {
+        "dependencies": {
+          "pamukkaleEdu.Entities": "1.0.0"
+        },
+        "runtime": {
+          "pamukkaleEdu.Data.dll": {}
+        }
+      },
+      "pamukkaleEdu.Entities/1.0.0": {
+        "runtime": {
+          "pamukkaleEdu.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "pamukkaleEdu.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "pamukkaleEdu.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
