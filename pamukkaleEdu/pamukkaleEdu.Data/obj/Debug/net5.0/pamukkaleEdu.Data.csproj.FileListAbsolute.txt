@@ -13,3 +13,6 @@ C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Data
 C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Data\obj\Debug\net5.0\pamukkaleEdu.Data.dll
 C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Data\obj\Debug\net5.0\ref\pamukkaleEdu.Data.dll
 C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Data\obj\Debug\net5.0\pamukkaleEdu.Data.pdb
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Data\bin\Debug\net5.0\pamukkaleEdu.Data.runtimeconfig.json
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Data\bin\Debug\net5.0\pamukkaleEdu.Data.runtimeconfig.dev.json
+C:\Users\turka\source\repos\Kurumsal\PamukkaleEDU\pamukkaleEdu\pamukkaleEdu.Data\obj\Debug\net5.0\pamukkaleEdu.Data.genruntimeconfig.cache

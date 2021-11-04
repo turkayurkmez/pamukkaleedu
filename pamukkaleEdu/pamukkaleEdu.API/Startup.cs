@@ -2,11 +2,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using pamukkaleEdu.Data.Context;
 using pamukkaleEdu.Data.Repositories;
 using pamukkaleEdu.Services;
 using System;
@@ -30,6 +32,9 @@ namespace pamukkaleEdu.API
         {
             services.AddScoped<IOgrenciServisi, OgrenciServisi>();
             services.AddScoped<IOgrenciRepository, FakeOgrenciRepository>();
+
+            var connectionString = Configuration.GetConnectionString("db");
+            services.AddDbContext<PauDbContext>(option => option.UseSqlServer(connectionString));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
