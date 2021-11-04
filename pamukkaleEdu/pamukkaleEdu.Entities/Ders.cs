@@ -13,7 +13,7 @@ namespace pamukkaleEdu.Entities
         public int? TeorikSure { get; set; }
         public int? PratikSure { get; set; }
 
-        public ICollection<Ogrenci> Ogrenciler { get; set; }
+        public ICollection<OgrenciDersDetay> OgrenciDetaylari { get; set; }
 
     }
 }

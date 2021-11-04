@@ -25,7 +25,7 @@ namespace pamukkaleEdu.Entities
         public DateTime? OlusturulmaTarihi { get; set; }
         public DateTime? GuncellemeTarihi { get; set; }
 
-        public ICollection<Ders> Dersler { get; set; }
+        public ICollection<OgrenciDersDetay> DersDetaylari { get; set; }
 
 
 
