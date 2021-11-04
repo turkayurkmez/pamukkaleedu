@@ -21,8 +21,24 @@ namespace pamukkaleEdu.API.Controllers
         [HttpGet]
         public async Task<IActionResult> TumOgrencileriGetir()
         {
-           var ogrenciler =  await ogrenciServisi.OgrencileriGetir();
+            var ogrenciler = await ogrenciServisi.OgrencileriGetir();
             return Ok(ogrenciler);
+        }
+
+        [HttpGet("{ogrenciNo}")]
+        public async Task<IActionResult> OgrenciNoyaGoreAra([FromRoute]string ogrenciNo)
+        {
+            if (string.IsNullOrEmpty(ogrenciNo))
+            {
+                return BadRequest(new { message ="ogrenci numarası belirtilmeli" });
+            }
+
+           var result = await ogrenciServisi.OgrenciNoyaGoreOgrenciGetir(ogrenciNo);
+            if (result == null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
         }
     }
 }

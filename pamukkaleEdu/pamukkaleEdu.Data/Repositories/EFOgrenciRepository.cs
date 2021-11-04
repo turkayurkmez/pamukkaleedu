@@ -1,4 +1,6 @@
-﻿using pamukkaleEdu.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using pamukkaleEdu.Data.Context;
+using pamukkaleEdu.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,16 +10,14 @@ using System.Threading.Tasks;
 
 namespace pamukkaleEdu.Data.Repositories
 {
-    public class FakeOgrenciRepository : IOgrenciRepository
+    public class EFOgrenciRepository : IOgrenciRepository
     {
-        private List<Ogrenci> ogrenciler = new List<Ogrenci>
+
+        private PauDbContext dbContext;
+        public EFOgrenciRepository(PauDbContext dbContext)
         {
-            new Ogrenci{ Id=1, Ad="Çağrı", OgrenciNo="20171001", Program="Bilgisayar Müh.", Durum="Mezun"},
-            new Ogrenci{ Id=2, Ad="Türkay", OgrenciNo="20210001", Program="Bilgisayar Müh.", Durum="Öğrenci"},
-            new Ogrenci{ Id=3, Ad="Cüneyt", OgrenciNo="20141002", Program="Gıda Müh.", Durum="Öğrenci"},
-
-
-        };
+            this.dbContext = dbContext;
+        }
         public Task<Ogrenci> AddEntity(Ogrenci newEntity)
         {
             throw new NotImplementedException();
@@ -35,13 +35,13 @@ namespace pamukkaleEdu.Data.Repositories
 
         public IEnumerable<Ogrenci> GetAllEntities()
         {
-            return ogrenciler;
-
+            throw new NotImplementedException();
         }
 
         public async Task<IEnumerable<Ogrenci>> GetAllEntitiesAync()
         {
-            return await Task.FromResult(ogrenciler);
+            var ogrenciler = await dbContext.Ogrenciler.ToListAsync();
+            return ogrenciler;
         }
 
         public IEnumerable<Ogrenci> GetEntitiesWithCredential(Expression<Func<Ogrenci, bool>> predicate)
@@ -54,9 +54,14 @@ namespace pamukkaleEdu.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<Ogrenci> GetStudentByStudentNo(string ogrenciNo)
+        public async Task<Ogrenci> GetStudentByStudentNo(string ogrenciNo)
         {
-            throw new NotImplementedException();
+            var ogrenci = await dbContext.Ogrenciler.Include(ogr => ogr.DersDetaylari)
+                                              .ThenInclude(detay => detay.Ders)
+                                              .FirstOrDefaultAsync(ogr => ogr.OgrenciNo == ogrenciNo);
+
+            return ogrenci;
+
         }
 
         public Task<Ogrenci> UpdateEntity(Ogrenci newEntity)

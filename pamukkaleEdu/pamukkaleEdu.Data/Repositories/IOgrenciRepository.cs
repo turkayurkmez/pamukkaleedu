@@ -9,6 +9,6 @@ namespace pamukkaleEdu.Data.Repositories
 {
    public interface IOgrenciRepository : IRepository<Ogrenci>
     {
-        IEnumerable<Ogrenci> GetStudentByStudentNo(string ogrenciNo);
+        Task<Ogrenci> GetStudentByStudentNo(string ogrenciNo);
     }
 }

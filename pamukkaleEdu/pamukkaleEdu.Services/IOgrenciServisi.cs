@@ -11,5 +11,6 @@ namespace pamukkaleEdu.Services
    public interface IOgrenciServisi
     {
         Task<IEnumerable<OgrenciListeResponse>> OgrencileriGetir();
+        Task<OgrenciDetayResponse> OgrenciNoyaGoreOgrenciGetir(string ogrenciNo);
     }
 }

@@ -11,6 +11,7 @@ using Microsoft.OpenApi.Models;
 using pamukkaleEdu.Data.Context;
 using pamukkaleEdu.Data.Repositories;
 using pamukkaleEdu.Services;
+using pamukkaleEdu.Services.Mapping;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +32,7 @@ namespace pamukkaleEdu.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IOgrenciServisi, OgrenciServisi>();
-            services.AddScoped<IOgrenciRepository, FakeOgrenciRepository>();
+            services.AddScoped<IOgrenciRepository, EFOgrenciRepository>();
 
             var connectionString = Configuration.GetConnectionString("db");
             services.AddDbContext<PauDbContext>(option => option.UseSqlServer(connectionString));
@@ -41,6 +42,8 @@ namespace pamukkaleEdu.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "pamukkaleEdu.API", Version = "v1" });
             });
+
+            services.AddAutoMapper(typeof(MappingProfile));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
