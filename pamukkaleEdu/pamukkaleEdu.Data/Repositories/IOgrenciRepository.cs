@@ -10,5 +10,6 @@ namespace pamukkaleEdu.Data.Repositories
    public interface IOgrenciRepository : IRepository<Ogrenci>
     {
         Task<Ogrenci> GetStudentByStudentNo(string ogrenciNo);
+        Task<bool> IsExists(int id);
     }
 }

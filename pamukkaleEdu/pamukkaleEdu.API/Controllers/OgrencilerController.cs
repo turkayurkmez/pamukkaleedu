@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using pamukkaleEdu.Services;
 using pamukkaleEdu.Services.DataTransferObjects.Requests;
@@ -11,6 +12,7 @@ namespace pamukkaleEdu.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class OgrencilerController : ControllerBase
     {
         private IOgrenciServisi ogrenciServisi;
@@ -20,6 +22,7 @@ namespace pamukkaleEdu.API.Controllers
             this.ogrenciServisi = ogrenciServisi;
         }
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> TumOgrencileriGetir()
         {
             var ogrenciler = await ogrenciServisi.OgrencileriGetir();
@@ -27,6 +30,7 @@ namespace pamukkaleEdu.API.Controllers
         }
 
         [HttpGet("{ogrenciNo}")]
+        [AllowAnonymous]
         public async Task<IActionResult> OgrenciNoyaGoreAra([FromRoute] string ogrenciNo)
         {
             if (string.IsNullOrEmpty(ogrenciNo))
@@ -41,7 +45,7 @@ namespace pamukkaleEdu.API.Controllers
             }
             return Ok(result);
         }
-        [HttpPost()]
+        [HttpPost()]      
         public async Task<IActionResult> OgrenciEkle(OgrenciEkleRequest ogrenciEkleRequest)
         {
             if (ModelState.IsValid)
@@ -50,6 +54,38 @@ namespace pamukkaleEdu.API.Controllers
                 return CreatedAtAction(nameof(OgrenciNoyaGoreAra), new { ogrenciNo = ogrenciNo }, null);
             }
             return BadRequest(ModelState);
+        }
+
+        [HttpPut("{id}")]
+       
+        public async Task<IActionResult> OgrenciGuncelle(int id,OgrenciGuncelleRequest request)
+        {
+            var ogrenciVarmi = await ogrenciServisi.OgrenciVarMi(id);
+            if (ogrenciVarmi)
+            {
+                if (ModelState.IsValid)
+                {
+                    await ogrenciServisi.Guncelle(request);
+                    return Ok();
+                }
+                return BadRequest(ModelState);
+            } 
+            
+            return NotFound();
+        }
+        [HttpDelete("{id}")]
+      
+        public async Task<IActionResult> OgrenciSil(int id)
+        {
+            var ogrenciVarmi = await ogrenciServisi.OgrenciVarMi(id);
+            if (ogrenciVarmi)
+            {                            
+                     await ogrenciServisi.Sil(id);
+                    return Ok();           
+              
+            }
+
+            return NotFound();
         }
     }
 }

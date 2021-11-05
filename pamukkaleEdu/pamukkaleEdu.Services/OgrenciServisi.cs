@@ -23,6 +23,14 @@ namespace pamukkaleEdu.Services
             this.mapper = mapper;
         }
 
+        public async  Task Guncelle(OgrenciGuncelleRequest request)
+        {
+            var ogrenci = request.ConvertToEntity(mapper);
+            ogrenci.GuncellemeTarihi = DateTime.Now;
+            await ogrenciRepository.UpdateEntity(ogrenci);
+
+        }
+
         public async Task<string> OgrenciEkle(OgrenciEkleRequest ogrenciEkleRequest)
         {
             Ogrenci ogrenci = ogrenciEkleRequest.ConvertToEntity(mapper);
@@ -55,6 +63,18 @@ namespace pamukkaleEdu.Services
         {
             var ogrenci = await ogrenciRepository.GetStudentByStudentNo(ogrenciNo);
             return ogrenci.ConvertToDto(mapper);
+        }
+
+        public async Task<bool> OgrenciVarMi(int id)
+        {
+           bool varMi = await ogrenciRepository.IsExists(id);
+            return varMi; 
+        }
+
+        public async Task Sil(int id)
+        {
+             await ogrenciRepository.Delete(id);
+
         }
     }
 }

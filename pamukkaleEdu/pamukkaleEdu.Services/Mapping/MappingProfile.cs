@@ -17,6 +17,7 @@ namespace pamukkaleEdu.Services.Mapping
             CreateMap<Ogrenci, OgrenciListeResponse>().ReverseMap();
             CreateMap<Ogrenci, OgrenciDetayResponse>().ReverseMap();
             CreateMap<OgrenciEkleRequest, Ogrenci>();
+            CreateMap<OgrenciGuncelleRequest, Ogrenci>();
         }
     }
 }

@@ -14,5 +14,8 @@ namespace pamukkaleEdu.Services
         Task<IEnumerable<OgrenciListeResponse>> OgrencileriGetir();
         Task<OgrenciDetayResponse> OgrenciNoyaGoreOgrenciGetir(string ogrenciNo);
         Task<string> OgrenciEkle(OgrenciEkleRequest ogrenciEkleRequest);
+        Task<bool> OgrenciVarMi(int id);
+        Task Guncelle(OgrenciGuncelleRequest request);
+        Task Sil(int id);
     }
 }

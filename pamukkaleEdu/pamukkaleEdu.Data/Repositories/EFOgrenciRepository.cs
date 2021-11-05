@@ -20,19 +20,24 @@ namespace pamukkaleEdu.Data.Repositories
         }
         public async Task<Ogrenci> AddEntity(Ogrenci newEntity)
         {
+            newEntity.OlusturulmaTarihi = DateTime.Now;
             dbContext.Ogrenciler.Add(newEntity);
-            int result =  await dbContext.SaveChangesAsync();
+            int result = await dbContext.SaveChangesAsync();
             return result > 0 ? newEntity : null;
         }
 
-        public Task<int> Delete(Ogrenci entity)
+        public async Task<int> Delete(Ogrenci entity)
         {
-            throw new NotImplementedException();
+             dbContext.Ogrenciler.Remove(entity);
+           var result = await dbContext.SaveChangesAsync();
+            return result;
+
         }
 
         public Task<int> Delete(int id)
         {
-            throw new NotImplementedException();
+            var entity = dbContext.Ogrenciler.FirstOrDefault(x => x.Id == id);
+            return Delete(entity);
         }
 
         public IEnumerable<Ogrenci> GetAllEntities()
@@ -66,9 +71,20 @@ namespace pamukkaleEdu.Data.Repositories
 
         }
 
-        public Task<Ogrenci> UpdateEntity(Ogrenci newEntity)
+        public async Task<bool> IsExists(int id)
         {
-            throw new NotImplementedException();
+            return await dbContext.Ogrenciler.AnyAsync(ogr => ogr.Id == id);
+
+
+        }
+
+        public async Task<Ogrenci> UpdateEntity(Ogrenci newEntity)
+        {
+            var result = dbContext.Ogrenciler.Update(newEntity);
+
+            await dbContext.SaveChangesAsync();
+            return result.Entity;
+
         }
     }
 }

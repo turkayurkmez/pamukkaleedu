@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using pamukkaleEdu.API.Security;
 using pamukkaleEdu.Data.Context;
 using pamukkaleEdu.Data.Repositories;
 using pamukkaleEdu.Services;
@@ -50,6 +51,8 @@ namespace pamukkaleEdu.API
                 builder.AllowAnyHeader();
                 builder.AllowAnyMethod();
             }));
+
+            services.AddAuthentication("Basic").AddScheme<BasicAuthenticationOption, BasicAuthenticationHandler>("Basic", null);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,7 +69,7 @@ namespace pamukkaleEdu.API
 
             app.UseCors("Allow");
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

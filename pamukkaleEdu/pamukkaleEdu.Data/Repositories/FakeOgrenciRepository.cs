@@ -59,6 +59,11 @@ namespace pamukkaleEdu.Data.Repositories
             throw new NotImplementedException();
         }
 
+        public Task<bool> IsExists(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<Ogrenci> UpdateEntity(Ogrenci newEntity)
         {
             throw new NotImplementedException();

@@ -30,5 +30,10 @@ namespace pamukkaleEdu.Services.Extensions
         {
             return mapper.Map<Ogrenci>(request);
         }
+
+        public static Ogrenci ConvertToEntity(this OgrenciGuncelleRequest request, IMapper mapper)
+        {
+            return mapper.Map<Ogrenci>(request);
+        }
     }
 }
