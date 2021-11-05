@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using pamukkaleEdu.Data.Repositories;
 using pamukkaleEdu.Entities;
+using pamukkaleEdu.Services.DataTransferObjects.Requests;
 using pamukkaleEdu.Services.DataTransferObjects.Responses;
 using pamukkaleEdu.Services.Extensions;
 using System;
@@ -21,6 +22,15 @@ namespace pamukkaleEdu.Services
             this.ogrenciRepository = ogrenciRepository;
             this.mapper = mapper;
         }
+
+        public async Task<string> OgrenciEkle(OgrenciEkleRequest ogrenciEkleRequest)
+        {
+            Ogrenci ogrenci = ogrenciEkleRequest.ConvertToEntity(mapper);
+            Ogrenci yeniOgrenci =  await ogrenciRepository.AddEntity(ogrenci);
+            return yeniOgrenci.OgrenciNo;
+
+        }
+
         public async Task<IEnumerable<OgrenciListeResponse>> OgrencileriGetir()
         {
             var ogrenciler = await ogrenciRepository.GetAllEntitiesAync();

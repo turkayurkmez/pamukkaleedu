@@ -44,6 +44,12 @@ namespace pamukkaleEdu.API
             });
 
             services.AddAutoMapper(typeof(MappingProfile));
+            services.AddCors(option => option.AddPolicy("Allow", builder =>
+            {
+                builder.AllowAnyOrigin();
+                builder.AllowAnyHeader();
+                builder.AllowAnyMethod();
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,6 +64,7 @@ namespace pamukkaleEdu.API
 
             app.UseHttpsRedirection();
 
+            app.UseCors("Allow");
             app.UseRouting();
 
             app.UseAuthorization();

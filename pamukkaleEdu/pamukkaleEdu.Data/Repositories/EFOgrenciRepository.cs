@@ -18,9 +18,11 @@ namespace pamukkaleEdu.Data.Repositories
         {
             this.dbContext = dbContext;
         }
-        public Task<Ogrenci> AddEntity(Ogrenci newEntity)
+        public async Task<Ogrenci> AddEntity(Ogrenci newEntity)
         {
-            throw new NotImplementedException();
+            dbContext.Ogrenciler.Add(newEntity);
+            int result =  await dbContext.SaveChangesAsync();
+            return result > 0 ? newEntity : null;
         }
 
         public Task<int> Delete(Ogrenci entity)

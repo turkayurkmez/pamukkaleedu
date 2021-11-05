@@ -1,4 +1,5 @@
 ﻿using pamukkaleEdu.Entities;
+using pamukkaleEdu.Services.DataTransferObjects.Requests;
 using pamukkaleEdu.Services.DataTransferObjects.Responses;
 using System;
 using System.Collections.Generic;
@@ -12,5 +13,6 @@ namespace pamukkaleEdu.Services
     {
         Task<IEnumerable<OgrenciListeResponse>> OgrencileriGetir();
         Task<OgrenciDetayResponse> OgrenciNoyaGoreOgrenciGetir(string ogrenciNo);
+        Task<string> OgrenciEkle(OgrenciEkleRequest ogrenciEkleRequest);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using pamukkaleEdu.Services;
+using pamukkaleEdu.Services.DataTransferObjects.Requests;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,19 +27,29 @@ namespace pamukkaleEdu.API.Controllers
         }
 
         [HttpGet("{ogrenciNo}")]
-        public async Task<IActionResult> OgrenciNoyaGoreAra([FromRoute]string ogrenciNo)
+        public async Task<IActionResult> OgrenciNoyaGoreAra([FromRoute] string ogrenciNo)
         {
             if (string.IsNullOrEmpty(ogrenciNo))
             {
-                return BadRequest(new { message ="ogrenci numarası belirtilmeli" });
+                return BadRequest(new { message = "ogrenci numarası belirtilmeli" });
             }
 
-           var result = await ogrenciServisi.OgrenciNoyaGoreOgrenciGetir(ogrenciNo);
+            var result = await ogrenciServisi.OgrenciNoyaGoreOgrenciGetir(ogrenciNo);
             if (result == null)
             {
                 return NotFound();
             }
             return Ok(result);
+        }
+        [HttpPost()]
+        public async Task<IActionResult> OgrenciEkle(OgrenciEkleRequest ogrenciEkleRequest)
+        {
+            if (ModelState.IsValid)
+            {
+                string ogrenciNo = await ogrenciServisi.OgrenciEkle(ogrenciEkleRequest);
+                return CreatedAtAction(nameof(OgrenciNoyaGoreAra), new { ogrenciNo = ogrenciNo }, null);
+            }
+            return BadRequest(ModelState);
         }
     }
 }
