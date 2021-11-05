@@ -11,5 +11,7 @@ namespace pamukkaleEdu.Data.Repositories
     {
         Task<Ogrenci> GetStudentByStudentNo(string ogrenciNo);
         Task<bool> IsExists(int id);
+
+        Task<bool> AddStudentAndCourse(Ogrenci ogrenci, Ders ders);
     }
 }

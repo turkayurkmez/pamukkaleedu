@@ -47,6 +47,7 @@ namespace pamukkaleEdu.API.Security
             //userService vs yazmaya üşendiğim için burada sahte denetim yaptım :(
             if (username=="admin" && pass =="1234")
             {
+                //normalde, IUserService interface'ini implemente eden bir sınıfın instance'i burada Validasyon yapmalı.
                 User user = new User { Name = "turkay", Role = "Yonetici" };
 
                 List<Claim> claims = new List<Claim>

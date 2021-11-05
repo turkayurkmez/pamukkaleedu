@@ -1,8 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using pamukkaleEdu.Data.Context;
 using pamukkaleEdu.Entities;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -26,10 +28,40 @@ namespace pamukkaleEdu.Data.Repositories
             return result > 0 ? newEntity : null;
         }
 
+        public async Task<bool> AddStudentAndCourse(Ogrenci ogrenci, Ders ders)
+        {
+            //Eğer ders EKLENEMEZ ise Öğrenci'yi geri alacaksın!!!!!!
+            using (dbContext)
+            {
+                using (IDbContextTransaction transaction = dbContext.Database.BeginTransaction())
+                {
+                    try
+                    {
+                        dbContext.Ogrenciler.Add(ogrenci);
+                        await dbContext.SaveChangesAsync();
+
+                        dbContext.Dersler.Add(ders);
+                        await dbContext.SaveChangesAsync();
+
+                        transaction.Commit();
+                        return true;
+                    }
+                    catch (Exception)
+                    {
+
+                        transaction.Rollback();
+                        return false;
+                    }
+                }
+
+
+            }
+        }
+
         public async Task<int> Delete(Ogrenci entity)
         {
-             dbContext.Ogrenciler.Remove(entity);
-           var result = await dbContext.SaveChangesAsync();
+            dbContext.Ogrenciler.Remove(entity);
+            var result = await dbContext.SaveChangesAsync();
             return result;
 
         }

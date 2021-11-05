@@ -12,7 +12,7 @@ namespace pamukkaleEdu.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    [Authorize(Roles ="Yonetici")]
     public class OgrencilerController : ControllerBase
     {
         private IOgrenciServisi ogrenciServisi;

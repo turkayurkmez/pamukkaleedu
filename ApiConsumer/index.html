@@ -8,6 +8,30 @@
 </head>
 <body>
     <button id="getir">Öğrencileri Getir</button>
+    <div>
+        <p>
+            Ad
+            <input type="text" id="Ad" name="Ad">  
+        </p>
+        <p>Soyad
+            <input type="text" id="Soyad" name="Soyad">  
+
+        </p>
+        <p>Öğrenci No
+            <input type="text" id="OgrenciNo" name="OgrenciNo">  
+
+        </p>
+        <p>Doğum Tairihi
+            <input type="datetime-local" id="DTarihi" name="DTarihi">  
+        </p>
+        <p>Program
+            <input type="text" id="Program" name="Program">  
+        </p>
+        <p>Durum
+            <input type="text" id="Durum" name="Durum">  
+        </p>
+        <button id="buttonGonder">Gönder</button>
+    </div>
     <ul id="ogrenciler"></ul>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
@@ -28,6 +52,39 @@
 
                     }
                 });  
+              });
+
+              $('#buttonGonder').on('click',function(){
+
+                  let uname = 'admin';
+                  let pass = '1234';
+                  let newStudent = {
+                     ad : $('#Ad').val(),
+                     ogrenciNo : $('#OgrenciNo').val(),
+                     soyad : $('#Soyad').val(),
+                     dogumTarihi : $('#DTarihi').val(),
+                     program : $('#Program').val(),
+                     durum: $('#Durum').val()
+                  };
+
+                  console.log(newStudent);
+                   $.ajax({
+                       url:'https://localhost:44349/api/Ogrenciler',
+                       method:'POST',
+                       contentType:'application/json',
+                       data: JSON.stringify(newStudent),
+                       headers:{
+                           'Authorization': 'Basic '+ btoa(uname + ':'+pass)  
+                       },
+                       success:function(data){
+                          console.log(data);
+                       },
+                       error:function(err){
+                           console.log(err);
+                       }
+
+                       
+                   });
               });
           });  
     </script>
